@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Contato - Nintendo News</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <nav>
+            <div class="logo">Nintendo News</div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="analises.html">Análises</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTAINER -->
+    <div class="container">
+        <h1 class="titulo-secao" style="margin-bottom: 40px; font-size: 32px; text-align: center;">Fale Conosco</h1>
+        <p style="text-align: center; color: #666; margin-bottom: 50px; font-size: 16px;">
+            Temos prazer em ouvir sugestões, críticas e mensagens de nossos leitores. Entre em contato conosco!
+        </p>
+
+        <!-- GRID DE CONTATO -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 50px;">
+            <!-- INFORMAÇÕES -->
+            <div>
+                <h3 style="font-size: 20px; margin-bottom: 25px; color: var(--vermelho);">Informações de Contato</h3>
+
+                <div class="info-card" style="margin-bottom: 20px;">
+                    <h4 style="font-weight: bold; margin-bottom: 10px;">Email</h4>
+                    <p><a href="mailto:contato@nintendodnews.com"
+                            style="color: var(--vermelho); text-decoration: none;">contato@nintendodnews.com</a></p>
+                </div>
+
+                <div class="info-card" style="margin-bottom: 20px;">
+                    <h4 style="font-weight: bold; margin-bottom: 10px;">Telefone</h4>
+                    <p>+55 (11) 3000-0000</p>
+                </div>
+
+                <div class="info-card" style="margin-bottom: 20px;">
+                    <h4 style="font-weight: bold; margin-bottom: 10px;">Endereço</h4>
+                    <p>Rua dos Videogames, 123<br>São Paulo, SP - Brasil</p>
+                </div>
+
+                <div class="info-card">
+                    <h4 style="font-weight: bold; margin-bottom: 10px;">Horário de Funcionamento</h4>
+                    <p>Segunda a Sexta: 9h às 18h<br>Sábado e Domingo: Fechado</p>
+                </div>
+
+                <h3 style="font-size: 20px; margin-top: 40px; margin-bottom: 25px; color: var(--vermelho);">Redes
+                    Sociais</h3>
+                <p style="margin-bottom: 15px;">
+                    <a href="#" style="color: var(--vermelho); text-decoration: none; font-weight: bold;">Facebook</a> |
+                    <a href="#" style="color: var(--vermelho); text-decoration: none; font-weight: bold;">Twitter</a> |
+                    <a href="#" style="color: var(--vermelho); text-decoration: none; font-weight: bold;">Instagram</a>
+                    |
+                    <a href="#" style="color: var(--vermelho); text-decoration: none; font-weight: bold;">YouTube</a>
+                </p>
+            </div>
+
+            <!-- FORMULÁRIO -->
+            <div>
+                <h3 style="font-size: 20px; margin-bottom: 25px; color: var(--vermelho);">Envie uma Mensagem</h3>
+
+                <form style="display: grid; gap: 15px;">
+                    <div class="grupo-form">
+                        <label for="nome" style="font-weight: bold; display: block; margin-bottom: 8px;">Nome
+                            Completo</label>
+                        <input type="text" id="nome" name="nome" required
+                            style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px;">
+                    </div>
+
+                    <div class="grupo-form">
+                        <label for="email" style="font-weight: bold; display: block; margin-bottom: 8px;">Email</label>
+                        <input type="email" id="email" name="email" required
+                            style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px;">
+                    </div>
+
+                    <div class="grupo-form">
+                        <label for="assunto"
+                            style="font-weight: bold; display: block; margin-bottom: 8px;">Assunto</label>
+                        <input type="text" id="assunto" name="assunto" required
+                            style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px;">
+                    </div>
+
+                    <div class="grupo-form">
+                        <label for="tipo" style="font-weight: bold; display: block; margin-bottom: 8px;">Tipo de
+                            Mensagem</label>
+                        <select id="tipo" name="tipo"
+                            style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px;">
+                            <option value="duvida">Dúvida</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="critica">Crítica</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="grupo-form">
+                        <label for="mensagem"
+                            style="font-weight: bold; display: block; margin-bottom: 8px;">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="6" required
+                            style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; font-family: Arial, sans-serif;"></textarea>
+                    </div>
+
+                    <button type="submit" class="botao" style="width: 100%; padding: 15px;">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- SEÇÃO ADICIONAL -->
+        <div style="background: var(--cinza-claro); padding: 40px; border-radius: 8px; text-align: center;">
+            <h3 style="font-size: 22px; margin-bottom: 15px;">Inscreva-se na Nossa Newsletter</h3>
+            <p style="color: var(--cinza); margin-bottom: 20px;">Receba as últimas notícias, reviews e análises sobre
+                Nintendo direto em seu email!</p>
+            <form style="display: flex; gap: 10px; max-width: 500px; margin: 0 auto;">
+                <input type="email" placeholder="Seu email" required
+                    style="flex: 1; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px;">
+                <button type="submit" class="botao">Inscrever</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h4>Sobre Nintendo News</h4>
+                <p>Somos o principal blog de notícias sobre Nintendo, trazendo as últimas notícias, reviews profundos e
+                    análises detalhadas sobre todos os produtos e games da Nintendo.</p>
+            </div>
+            <div>
+                <h4>Categorias</h4>
+                <ul id="navMenu">
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="analises.html">Análises</a></li>
+                    <li><a href="videos.html">Vídeos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contato</h4>
+                <ul>
+                    <li><a href="contato.html">Fale Conosco</a></li>
+                    <li><a href="#">Publicidade</a></li>
+                    <li><a href="#">Parcerias</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Redes Sociais</h4>
+                <p>Siga-nos para as últimas notícias e conteúdo exclusivo sobre Nintendo.</p>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2025 Nintendo News.</p>
+    </footer>
+    <script>
+        // Menu Hambúrguer
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        if (menuToggle && navMenu) {
+            menuToggle.addEventListener('click', function () {
+                this.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+
+            // Fechar menu ao clicar em um link
+            const menuLinks = navMenu.querySelectorAll('a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    menuToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+        }
+    </script>
+
+</body>
+
+</html>
